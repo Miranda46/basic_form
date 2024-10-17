@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="main.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="aside">
+            <div class="aside_title">
+                <h1>Carcassonne</h1>
+            </div>
+        </div>
+        <div class="main">
+            <div class="description">
+                <h4>
+                    <strong> Welcome to my totally real online service </strong>
+
+                </h4>
+                <br>
+                <p>Feel the formular to see something amazing
+                    (NOT GONE WRONG) while I traverse my journey
+                    learning Front-end technologies!
+                </p>
+            </div>
+            <form action="#">
+                <fieldset class="formular">
+                    <div class="left_side">
+                        <div>
+                            <label for="first_name">First Name</label>
+                            <input type="text" id="first_name"
+                            title="Name should have at least 1 character" minlength="1">
+                        </div>
+                        <div>
+                            <label for="last_name">Last Name</label>
+                            <input type="text" id="last_name"
+                            title="Last name should have at least 3 characters" minlength="3">
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" id="email"
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                            title="Email address must be valid">
+                        </div>
+                    </div>
+                    <div class="right_side">
+                        <div>
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone"
+                            title="Phone should have exactly 10 characters"\
+                            minlength="10" maxlength="10">
+                        </div>
+                        <div>
+                            <label for="password">Password</label>
+                            <input type="password" id="password"
+                            title="password should be between 8 and 18 characters long"
+                            minlength="8" maxlength="18">
+                        </div>
+                        <div>
+                            <label for="confirm_password">Confirm Password</label>
+                            <input type="password" id="confirm_password">
+                        </div>
+                    </div>
+                </fieldset>
+                <br>
+                <button type="submit">Submit</button>
+                <div>
+                    <p>Already have an account? <a href="http://github.com/Miranda46">Log in</a></p>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</body>
+
+</html>
